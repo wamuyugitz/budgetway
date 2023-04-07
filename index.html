@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="../images/budgetwaylogo.png" alt="missing logo">
+          </div>
+          <div class="nav-links">
+             <a class="selected" href="../html/index.html">Home</a>
+            <a href="../html/about.html">About</a>
+            <a href="#same-page-nav-jump">Contact</a>
+          </div>
+        </nav>
+
+        <div class="videoplay">
+            <video src="../images/world-2.mp4" type="video/mp4" autoplay muted loop></video>
+            <div class="videotext">
+                <h1>Welcome</h1>
+                <p>Welcome to BudgetWay where you can easily select a country and access valuable<br>
+                     information such as background insights, maps, and the cost of living in the capital. <br>
+                    Our platform is designed to make it effortless for users to make informed decisions when <br>
+                     planning their next trip or relocation.</p>  
+
+                     <button id="submit">Learn More</button>
+            </div>   
+        </div>
+
+
+        <div class="container">
+            <input type="text" id="country-inp" placeholder="Search a country" />
+          </div>
+
+          <div class="btn">
+            <button id="search-btn" type="button">Check</button>
+            
+        </div>
+
+        <div id="result"></div>
+
+
+        <div class="cityh1">
+            <h1>View Top Cities & Vacation spots!</h1>
+        </div>
+
+        <div class="image-container">
+            <img src="../Images/London2.jpg" alt="Image 1">
+            <img src="../Images/Paris.jpg" alt="Image 2" id="centerimg">
+            <img src="../Images/Rome.jpg" alt="Image 3">
+          </div>
+
+        </div>
+
+        <footer id="same-page-nav-jump">
+            <div class="maincontent">
+              <div class="leftside">
+                <h2>About Us</h2>
+                <div class="footcontent">
+                  <p>Founded in 2022, BudgetWay Limited has grown to become Kenya’s leading concierge services provider catering to both locals and tourists with just a click of a button for every user alike.</p>
+                  </div>
+                </div>
+              </div>
+        
+        
+         <div class="centerbox">
+           <h2>Address</h2>
+           <p>BudgetWay Limited</p>
+           <p>390-80100 David Kayanda Rd, Kizingo</p>
+           <p>+254 728 664 005</p>
+           <h5>Location</h5>
+           <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4010.9288747025007!2d39.674612497195135!3d-4.066485403604891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18401319e0478487%3A0x7609a6fc7356db9e!2sDavid%20Kayanda%20Rd%2C%20Mombasa%2C%20Kenya!5e0!3m2!1sen!2smu!4v1645374805283!5m2!1sen!2smu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+         </div>
+        
+        <div class="user">
+          <h2>Contact Us</h2>
+          <form id="myForm">
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" name="email" required>
+            </div>
+          
+            <div class="userin">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" name="message" required></textarea>
+            </div>
+          
+            <div class="btn">
+              <button type="submit" name="button">Send</button>
+            </div>
+          </form>
+       
+          <script src="../js/fetchcountries.js"></script>
+          <script src="../js/contact.js"></script>
+
+</body>
+</html>
